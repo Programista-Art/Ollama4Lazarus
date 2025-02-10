@@ -1,0 +1,212 @@
+object Form1: TForm1
+  Left = 947
+  Height = 473
+  Top = 213
+  Width = 773
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'Ollama library for Lazarus'
+  ClientHeight = 473
+  ClientWidth = 773
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '3.8.0.0'
+  object Panel2: TPanel
+    Left = 0
+    Height = 473
+    Top = 0
+    Width = 520
+    Align = alClient
+    ClientHeight = 473
+    ClientWidth = 520
+    TabOrder = 0
+    object MemoAnswer: TMemo
+      Left = 1
+      Height = 267
+      Top = 1
+      Width = 518
+      Align = alClient
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Height = -21
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      PopupMenu = PopupMenu1
+      ScrollBars = ssBoth
+      TabOrder = 0
+    end
+    object MemoAsk: TMemo
+      Left = 1
+      Height = 167
+      Top = 268
+      Width = 518
+      Align = alBottom
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Height = -21
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      ScrollBars = ssBoth
+      TabOrder = 1
+    end
+    object PanelBottom: TPanel
+      Left = 1
+      Height = 37
+      Top = 435
+      Width = 518
+      Align = alBottom
+      ClientHeight = 37
+      ClientWidth = 518
+      TabOrder = 2
+      object SpeedButton1: TSpeedButton
+        Left = 456
+        Height = 35
+        Top = 1
+        Width = 61
+        Align = alRight
+        Caption = 'ASK'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        OnClick = SpeedButton1Click
+        ParentFont = False
+      end
+      object SpeedButton2: TSpeedButton
+        Left = 398
+        Height = 35
+        Top = 1
+        Width = 58
+        Align = alRight
+        Caption = 'CHAT'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        OnClick = SpeedButton2Click
+        ParentFont = False
+      end
+    end
+  end
+  object PanelRight: TPanel
+    Left = 520
+    Height = 473
+    Top = 0
+    Width = 253
+    Align = alRight
+    ClientHeight = 473
+    ClientWidth = 253
+    TabOrder = 1
+    object GroupBoxModel: TGroupBox
+      Left = 1
+      Height = 57
+      Top = 1
+      Width = 251
+      Align = alTop
+      Caption = 'Model'
+      ClientHeight = 37
+      ClientWidth = 247
+      TabOrder = 0
+      object ComboModel: TComboBox
+        Left = 5
+        Height = 23
+        Top = 5
+        Width = 237
+        Align = alClient
+        BorderSpacing.Around = 5
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'deepseek-r1:1.5b'
+          'deepseek-r1:7b'
+          'llama3.2:3b'
+          'tinyllama'
+          'openchat:7b'
+          'SpeakLeash/bielik-11b-v2.2-instruct:Q4_K_M'
+        )
+        Style = csDropDownList
+        TabOrder = 0
+        Text = 'deepseek-r1:1.5b'
+      end
+    end
+    object Label1: TLabel
+      Cursor = crHandPoint
+      Left = 16
+      Height = 15
+      Top = 472
+      Width = 108
+      Caption = 'https://ollama.com/'
+      OnClick = Label1Click
+      OnMouseDown = Label1MouseDown
+    end
+    object Memo1: TMemo
+      Left = 1
+      Height = 90
+      Top = 382
+      Width = 251
+      Align = alBottom
+      ScrollBars = ssBoth
+      TabOrder = 1
+    end
+    object GroupBox1: TGroupBox
+      Left = 1
+      Height = 49
+      Top = 58
+      Width = 251
+      Align = alTop
+      Caption = 'Promts'
+      ClientHeight = 29
+      ClientWidth = 247
+      TabOrder = 2
+      object ComboPromt: TComboBox
+        Left = 5
+        Height = 23
+        Top = 5
+        Width = 237
+        Align = alClient
+        BorderSpacing.Around = 5
+        ItemHeight = 15
+        Items.Strings = (
+          'Calculate '
+          'Oblicz '
+          'Who is '
+          'what it is '
+          'Co to jest '
+          'Kto to jest '
+        )
+        Style = csDropDownList
+        TabOrder = 0
+      end
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 8
+      Height = 31
+      Top = 112
+      Width = 58
+      Caption = 'Execute'
+      OnClick = SpeedButton3Click
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 170
+    Top = 63
+    object MenuFile: TMenuItem
+      Caption = 'File'
+      object MenuClose: TMenuItem
+        Caption = 'Close'
+      end
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'Models'
+      OnClick = MenuItem1Click
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 416
+    Top = 78
+    object MenuClearAll: TMenuItem
+      Caption = 'Clear all'
+      OnClick = MenuClearAllClick
+    end
+  end
+end

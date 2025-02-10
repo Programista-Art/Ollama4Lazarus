@@ -1,0 +1,53 @@
+object Form2: TForm2
+  Left = 382
+  Height = 149
+  Top = 512
+  Width = 406
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Models'
+  ClientHeight = 149
+  ClientWidth = 406
+  Position = poMainFormCenter
+  LCLVersion = '3.8.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 32
+    Top = 117
+    Width = 406
+    Align = alBottom
+    ClientHeight = 32
+    ClientWidth = 406
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Left = 365
+      Height = 30
+      Top = 1
+      Width = 40
+      Align = alRight
+      Caption = 'OK'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 117
+    Top = 0
+    Width = 406
+    Align = alClient
+    Lines.Strings = (
+      'deepseek-r1:1.5b pobrać https://ollama.com/library/deepseek-r1:1.5b'
+      'deepseek-r1:7b pobrać https://ollama.com/library/deepseek-r1:7b'
+      'tinyllama pobrać  https://ollama.com/library/tinyllama'
+      'openchat:7b'
+      'SpeakLeash/bielik-11b-v2.2-instruct:Q4_K_M pobrać można tu  https://ollama.com/SpeakLeash/bielik-11b-v2.2-instruct:Q4_K_M'
+    )
+    ReadOnly = True
+    TabOrder = 1
+  end
+end
