@@ -19,7 +19,6 @@ type
     GroupBoxModel: TGroupBox;
     Label1: TLabel;
     MainMenu1: TMainMenu;
-    Memo1: TMemo;
     MemoAnswer: TMemo;
     MemoAsk: TMemo;
     MenuFile: TMenuItem;
@@ -52,7 +51,7 @@ var
 
 implementation
 uses
-  OllamaAPI, unit2;
+  ollamaapiasync, unit2;
 
 {$R *.lfm}
 

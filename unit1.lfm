@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 947
+  Left = 356
   Height = 473
-  Top = 213
+  Top = 234
   Width = 773
   BorderIcons = [biSystemMenu, biMaximize]
   Caption = 'Ollama library for Lazarus'
@@ -117,6 +117,7 @@ object Form1: TForm1
         ItemHeight = 15
         ItemIndex = 0
         Items.Strings = (
+          'mistral'
           'deepseek-r1:1.5b'
           'deepseek-r1:7b'
           'llama3.2:3b'
@@ -126,7 +127,7 @@ object Form1: TForm1
         )
         Style = csDropDownList
         TabOrder = 0
-        Text = 'deepseek-r1:1.5b'
+        Text = 'mistral'
       end
     end
     object Label1: TLabel
@@ -139,15 +140,6 @@ object Form1: TForm1
       OnClick = Label1Click
       OnMouseDown = Label1MouseDown
     end
-    object Memo1: TMemo
-      Left = 1
-      Height = 90
-      Top = 382
-      Width = 251
-      Align = alBottom
-      ScrollBars = ssBoth
-      TabOrder = 1
-    end
     object GroupBox1: TGroupBox
       Left = 1
       Height = 49
@@ -157,7 +149,7 @@ object Form1: TForm1
       Caption = 'Promts'
       ClientHeight = 29
       ClientWidth = 247
-      TabOrder = 2
+      TabOrder = 1
       object ComboPromt: TComboBox
         Left = 5
         Height = 23

@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, unit1, OllamaAPI, unit2
+  Forms, unit1, unit2, OllamaAPIasync
   { you can add units after this };
 
 {$R *.res}

@@ -49,17 +49,17 @@
         <UnitName Value="Unit1"/>
       </Unit>
       <Unit>
-        <Filename Value="ollamaapi.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="OllamaAPI"/>
-      </Unit>
-      <Unit>
         <Filename Value="unit2.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form2"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit2"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ollamaapiasync.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="OllamaAPIasync"/>
       </Unit>
     </Units>
   </ProjectOptions>
